@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_X01BD.mk
+    $(LOCAL_DIR)/ancient_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_X01BD-eng \
-    fluid_X01BD-user \
-    fluid_X01BD-userdebug
+    ancient_X01BD-eng \
+    ancient_X01BD-user \
+    ancient_X01BD-userdebug
