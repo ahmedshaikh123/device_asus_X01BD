@@ -36,6 +36,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -159,17 +163,14 @@ PRODUCT_PACKAGES += \
 #    Display
 PRODUCT_PACKAGES += \
     copybit.sdm660 \
-	libdisplayconfig.qti.vendor \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
-    memtrack.sdm660 \
+     memtrack.sdm660 \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
     libtinyxml \
-    libgenlock \
-     vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor
+    libgenlock
 
 # Doze
 PRODUCT_PACKAGES += \

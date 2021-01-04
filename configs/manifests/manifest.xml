@@ -1,4 +1,4 @@
- <!--
+  <!--
     This is a skeleton device manifest. Notes:
     1. If a HAL is supported in both hwbinder and passthrough transport,
        only hwbinder is shown.
@@ -330,9 +330,9 @@
         </interface>
     </hal>
     <hal format="hidl">
-          <name>vendor.display.config</name>
+           <name>vendor.display.config</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>1.9</version>
         <interface>
             <name>IDisplayConfig</name>
             <instance>default</instance>
